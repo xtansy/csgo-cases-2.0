@@ -1,15 +1,15 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from '@/components/layout/Layout'
-import Home from '@/pages/Home'
-import Cases from '@/pages/Cases'
-import CaseOpen from '@/pages/CaseOpen'
-import Inventory from '@/pages/Inventory'
-import Crash from '@/pages/Crash'
-import Roulette from '@/pages/Roulette'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "@/components/layout/Layout";
+import Home from "@/pages/Home";
+import Cases from "@/pages/Cases";
+import CaseOpen from "@/pages/CaseOpen";
+import Inventory from "@/pages/Inventory";
+import Crash from "@/pages/Crash";
+import Roulette from "@/pages/Roulette";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/csgo-cases-2.0">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -21,5 +21,5 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
